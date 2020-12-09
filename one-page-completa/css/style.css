@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Axuliary Classes */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w33{
+    width: calc(100% / 3);
+}
+/* * */
+
+/* Header - Menu */
+
+section.menu-chamada{
+    background: linear-gradient(154.38deg, #74E393 16.97%, #6EDD8D 64.48%);
+}
+header{
+    padding: 10px;
+}
+
+header .container .logo{
+    width: 220px;
+    height: 60px;
+    background-color: #000000;
+    float: left;
+    cursor: pointer;
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop ul{
+    padding: 18px 0;
+    list-style-type: none;
+}
+
+nav.desktop ul li{
+    float: left;
+}
+
+nav.desktop ul li{
+    text-transform: uppercase;
+}
+
+nav.desktop ul li:nth-of-type(1),
+nav.desktop ul li:nth-of-type(2),
+nav.desktop ul li:nth-of-type(3),
+nav.desktop ul li:nth-of-type(4){
+    margin-right: 35px;
+}
+
+nav.desktop ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+nav.desktop ul li a:hover,
+nav.desktop ul li a:focus{
+    text-decoration: underline;
+}
+
+
+/*  Menu-Mobile */
+
+nav.mobile{
+	display: none;
+	float: right;
+}
+
+nav.mobile h3{
+    cursor: pointer;
+    font-size: 32px;
+    color: white;
+    position: relative;
+    top: 12px;
+    right: 0;
+}
+nav.mobile ul{
+	display: none;
+	width: 100%;
+	background: #2e8e49e0;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	z-index: 999;
+    text-align: center;
+}
+
+nav.mobile li{
+    padding:8px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid#ffffff;
+    border-top: 1px solid #ffffff;
+}
+
+nav.mobile li a{
+    color: white;
+}
+
+
+nav.mobile a{
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+/* * */
+
+/* * */
+/* Chamada */
+section.chamada .container{
+    display: flex;
+}
+
+section.chamada .titulo-chamada{
+    width: 50%;
+    margin: 80px 0 0 80px;
+}
+
+section.chamada .titulo-chamada h2{
+    text-transform: uppercase;
+    font-size: 4em;
+    color: white;
+    font-weight: 500;
+}
+
+section.chamada .titulo-chamada p{
+    color: white;
+    font-size: 1em;
+}
+
+section.chamada .foto-chamada{
+    padding-top: 40%;
+    margin-right: 20px;
+    width: 50%;
+    background-color: white;
+}
+
+/* * */
+
+/* Quem sou eu */
+section.quem-sou-eu{
+    margin: 100px 0;
+}
+
+section.quem-sou-eu .container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.img-perfil{
+    width: 50%;
+    height: 500px;
+    background-color: #c4c4c4;
+    border: 3px solid #6EDD8D;
+    margin: 0 30px;
+}
+
+.descricao{
+    width: 50%;
+}
+
+.titulo-sessao h2{
+    color: #6EDD8D;
+    font-size: 3.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.descricao p{
+    font-size: 14px;
+}
+
+.descricao p:nth-of-type(1){
+    margin-bottom: 10px;
+}
+
+.descricao p:nth-of-type(2){
+    margin-top: 10px;
+}
+
+.descricao ul{
+    list-style-position: inside;
+}
+
+.descricao ul li{
+    color: #6EDD8D;
+}
+
+
+/* * */
+
+/* Procedimentos */
+.procedimentos{
+    padding: 10px 0;
+}
+
+.procedimentos .titulo-sessao{
+    text-align: center;
+}
+
+.procedimentos .container{
+    max-width: 1480px;
+}
+
+.procedimentos .procedimentos-container{
+    float: left;
+    width: 33.3%;
+}
+
+.procedimentos .procedimentos-container .procedimentos-single{
+    padding: 20px;
+}
+
+.procedimentos .procedimentos-container .procedimentos-single h2{
+    font-size: 32px;
+    color: #6EDD8D;
+    font-weight: 400;
+}
+
+.procedimentos .procedimentos-container .procedimentos-single p{
+    padding: 10px 0;
+}
+
+/* * */
+/* Depoimentos */
+.depoimentos,
+footer{
+    background: linear-gradient(154.38deg, #74E393 16.97%, #6EDD8D 64.48%);
+    padding: 40px 0;
+}
+
+.depoimentos .depoimento-container{
+    width: 50%;
+    float: left;
+}
+   
+.depoimentos .titulo-sessao{
+    text-align: center;
+}
+
+.depoimentos .titulo-sessao h2{
+    color: white;
+}
+
+
+.card-single{
+    padding: 20px;
+}
+
+.card-single .content{
+    display: flex;
+    align-items: center;
+}
+
+.card-single .img-depoimento{
+    width: 40%;
+    padding-top: 40%;
+    background-color: #c4c4c4;
+    border: 3px solid #ffffff;
+}
+
+.card-single .depoimento-descricao{
+    width: 60%;
+    margin: 0 2%;
+}
+
+.card-single .depoimento-descricao h2{
+    color: white;
+    font-weight: 400;
+}
+
+.card-single .depoimento-descricao h3{
+    color: #f0f0f0;
+    font-weight: 400;
+}
+/* * */
+
+/* Contato */
+section.contato{
+    padding: 70px 0;
+}
+
+section.contato .titulo-sessao{
+    text-align: center;
+}
+
+section.contato .container{
+    max-width: 900px;
+}
+
+.form-single{
+    float: left;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.form-single input[type=text],
+.form-single input[type=email],
+.form-single input[type=tel]{
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    border: 1px solid #74E393;
+    padding: 0 10px;
+}
+
+.form-single textarea{
+    width: 100%;
+    height: 120px;
+    font-size: 24px;
+    resize: vertical;
+    border: 1px solid #74E393;
+    padding: 10px;
+}
+
+.form-single input[type=text]:focus,
+.form-single input[type=email]:focus,
+.form-single input[type=tel]:focus,
+.form-single textarea:focus,
+input[type=submit]:focus{
+    border: 2px solid #6EDD8D;
+    outline: 0;
+}
+
+input[type=submit]{
+    width: 300px;
+    height: 70px;
+    font-size: 24px;
+    color: #FFFFFF;
+    background: #6EDD8D;
+    border: none;
+    cursor: pointer;
+    float: right;
+    transition: background-color 200ms;
+}
+
+input[type=submit]:focus,
+input[type=submit]:hover{
+    background-color: #74E393;
+}
+/* * */
+
+/* rodape */
+footer{
+    background: linear-gradient(154.38deg, #74E393 16.97%, #6EDD8D 64.48%);
+}
+
+.footer-wraper{
+    float: left;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.footer-wraper h2,
+.footer-wraper p{
+    color: white;
+    font-weight: 400;
+}
+
+.footer-wraper h2{
+    font-size: 32px;
+}
+
+.footer-wraper p{
+    font-size: 20px;
+}
+
+.footer-wraper h3{
+    float: left;
+    margin: 0 20px;
+    color: white;
+}
+
+.footer-wraper h3 a{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-wraper:nth-of-type(4){
+    margin: 40px 0px 20px 0px;
+    text-align: center;
+}
+
+.footer-wraper:nth-of-type(4) ul{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.footer-wraper:nth-of-type(4) ul li{
+    float: left;
+}
+
+.footer-wraper:nth-of-type(4) ul li:nth-of-type(1),
+.footer-wraper:nth-of-type(4) ul li:nth-of-type(2),
+.footer-wraper:nth-of-type(4) ul li:nth-of-type(3),
+.footer-wraper:nth-of-type(4) ul li:nth-of-type(4){
+    margin-right: 35px;
+}
+
+.footer-wraper:nth-of-type(4) ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+
+.footer-wraper:nth-of-type(4) ul li a:hover,
+.footer-wraper:nth-of-type(4) ul li a:focus{
+    text-decoration: underline;
+}
+
+.footer-wraper:nth-of-type(5){
+    text-align: center;
+    margin: none;
+    padding: none;
+}
+
+.footer-wraper:nth-of-type(5) .logo-footer{
+    width: 220px;
+    height: 60px;
+    background-color: #000000;
+    display: inline-block;
+    cursor: pointer;
+    /* background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+/* * */
+@media screen and (max-width: 970px){
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .w50,
+    .w33{
+        width: 100%;
+    }
+
+    section.quem-sou-eu{
+        margin: 0;        
+    }
+    section.chamada .foto-chamada{
+        display: none;
+    }
+
+    section.chamada .titulo-chamada{
+        width: 100%;
+        margin: 80px 10%;
+    }
+
+    section.chamada .titulo-chamada h2,
+    section.chamada .titulo-chamada p{
+        display: block;
+        text-align: left;
+    }
+
+    section.quem-sou-eu .container{
+        flex-direction: column;
+    }
+
+    .img-perfil,
+    .descricao{
+        padding: 0 2%;
+    }
+
+    .img-perfil{
+        margin: 20px 2%;
+        width: 90%;
+    }
+
+    .descricao{
+        width: 100%;
+    }
+
+    .descricao p,
+    .descricao ul{
+        padding: 0 5%;
+    }
+
+    .titulo-sessao h2{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    .img-perfil{
+        padding-top: 100%;
+    }
+
+    .procedimentos .procedimentos-container,
+    .depoimentos .depoimento-container{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-single:nth-of-type(2n+1){
+        display: none;
+    }
+
+    .card-single .content{
+        flex-direction: column;
+    }
+
+    .card-single .depoimento-descricao{
+        width: 100%;
+    }
+
+    .form-single{
+        float: none;
+    }
+
+    input[type=submit]{
+        width: 97%;
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .footer-wraper{
+        display: inline-block;
+        text-align: center;
+        float: none;
+        margin: 20px 0;
+    }
+
+    .footer-wraper h3{
+        display: inline-block;
+        float: none;
+        text-align: center;
+    }
+
+    .footer-wraper:nth-of-type(4){
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    section.chamada .titulo-chamada h2{
+        font-size: 3em;
+    }
+
+    .procedimentos .titulo-sessao h2{
+        font-size: 2rem;
+    }
+}
