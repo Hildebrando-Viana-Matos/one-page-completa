@@ -79,8 +79,7 @@ nav.desktop ul li a{
     font-size: 18px;
 }
 
-nav.desktop ul li a:hover,
-nav.desktop ul li a:focus{
+nav.desktop ul li a:hover{
     text-decoration: underline;
 }
 
@@ -366,6 +365,22 @@ input[type=submit]:focus,
 input[type=submit]:hover{
     background-color: #74E393;
 }
+
+.form-single span{
+    display: inline-block;
+    color: red;
+    padding: 4px 0;
+}
+
+.box-sucesso{
+    margin-top: 10px;
+    display: none;
+    width: 100%;
+    padding: 10px;
+    background: #5fb382;
+    text-align: center;
+    color: white;
+}
 /* * */
 
 /* rodape */
@@ -435,8 +450,7 @@ footer{
     
 }
 
-.footer-wraper:nth-of-type(4) ul li a:hover,
-.footer-wraper:nth-of-type(4) ul li a:focus{
+.footer-wraper:nth-of-type(4) ul li a:hover{
     text-decoration: underline;
 }
 
