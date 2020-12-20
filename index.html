@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Cicera Cardoso Viana Matos</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
 </head>
 <body>
@@ -249,7 +249,7 @@
         </div><!--titulo-sessao-->
         <div class="container">
 
-            <form>
+            <form method="post" action="form.php">
                 <div class="form-single w100">
                     <span></span>
                     <input type="text" name="nome" placeholder="Nome Completo">
@@ -272,7 +272,6 @@
 
                 <input type="submit" value="Enviar">
             </form>
-            <div class="box-sucesso">Sua mensagem foi enviada com sucesso!</div>
             <div class="clear"></div>
         </div><!--container-->
     </section><!--contato-->
@@ -295,8 +294,6 @@
             <div class="footer-wraper w33">
                     <h3><a href="" target="_blank"><i class="fa fa-facebook"></i></a></h3>
                     <h3><a href="" target="_blank"><i class="fa fa-instagram"></i></a></h3>
-                    <h3><a href="" target="_blank"><i class="fa fa-youtube"></i></a></h3>
-                    <h3><a href="" target="_blank"><i class="fa fa-twitter"></i></a></h3>
             </div><!--wrapper-->
 
             <div class="footer-wraper w100">
@@ -317,8 +314,8 @@
         </div><!--container-->
     </footer>
 
-    <script src="../js/jquery-3.5.1.min.js"></script>
-    <script src="../js/menuScroll.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/menuScroll.js"></script>
 	<script>
 		$(function(){
 			$('nav.mobile h3').click(function(){
@@ -360,15 +357,6 @@
                     
                 }
 
-                if(erro == false){
-                    $('.box-sucesso').fadeIn(function(){
-                        setTimeout(function(){
-                            $('.box-sucesso').fadeOut();
-                        },5000);
-                    });
-                    $(this)[0].reset();
-                }
-
                 return false;
             })
 
@@ -377,7 +365,22 @@
                 $('span').html('');
             }
         })
+        var form = $('form');
+        $('form').ajaxSubmit({
+            beforeSubmit:function(){
+                form.find('input[type=submit]').attr('disabled','true');
+                form.find('input[type=submit]').animate({'opacity':'0.4'})
+                form.find('input[type=submit]').attr('value','Carregando');
 
+            },
+            success:function(data){
+                alert('Formulário foi enviado com sucesso!');
+                form.find('input[type=submit]').removeAttr('disabled');
+                form.find('input[type=submit]').animate({'opacity':'1'})
+                form.find('input[type=submit]').attr('value','Enviar');
+                form[0].reset();
+            }
+        });
 	</script>
 </body>
 </html>
