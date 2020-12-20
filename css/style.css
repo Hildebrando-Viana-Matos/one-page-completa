@@ -464,7 +464,7 @@ footer{
 }
 
 /* * */
-@media screen and (max-width: 970px){
+@media screen and (max-width: 980px){
     nav.desktop{
         display: none;
     }
